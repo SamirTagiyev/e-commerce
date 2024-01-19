@@ -1,0 +1,47 @@
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+/* Tinos */
+@import url("https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap");
+
+//Fonts
+
+$poppins: ("Poppins", sans-serif);
+$raleway: ("Raleway", sans-serif);
+$tinos: ("Tinos", serif);
+
+// Colors
+
+$primaryOrange: #ff8a00;
+$titleText: #311F09;
+$footerText: #E3E2E0;
+$lightGray: #D0CCC7;
+$financialTextDesc: #5c4529;
+$financialTextTitle: #59442b;
+$descriptionText: #a08d76;
+$mediumGray: #c4c4c4;
+$lightBrown: #e1c39f;
+$translucentBlue: #3fbaff1a;
+$lightPurple: #f3a7ff;
+$paleGreen: #10ddc44a;
+$darkBackground: #1b161d;
+$primaryGreen: #3fa72f;
+$secondaryGreen: #3fc66e;
+$tertiaryGreen: #4ea2d13d;
+$mediumGreen: #529067;
+$darkGreen: #657CF661;
+$brown: #9D6542;
+$translucentBlueLight: #A7C5FF40;
+$darkRed: 
+  #ac63f51a;
+$paleGreen2: #beedce;
+$mediumGrayLight: #c4c4c41a;
+$lightPurpleTranslucent: #f3a7ff87;
+$lightPurpleTranslucent2: #f3a7ff87;
+$darkRedTranslucent: #F563631A;
+$beige: #FEDFBA;
+$primaryRed:  #ff3838;
+$offWhite: #fffbf6;

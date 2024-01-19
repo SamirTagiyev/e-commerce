@@ -1,0 +1,134 @@
+@import "../../../../../../styles/variables";
+@import "../../../../../../styles/responsive-mixins";
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(208 204 199 / 10%);
+  border-radius: 2rem;
+  padding: 0.7rem 0.65rem;
+  border: 1.5px solid rgb(208 204 199 / 20%);
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-5px) scale(1.05);
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+        box-shadow: 0dvh 0.5rem 1rem rgb(0 0 0 / 10%);
+      }
+  @include xl {
+    width: 80%;
+    border: 30px;
+  }
+  .food_image {
+    width: 100%;
+  }
+  .title {
+    color: $titleText;
+    font-family: $poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto;
+    @include xl {
+      font-size: 1.875rem;
+      line-height: 3.75rem;
+    }
+  }
+  .mobile_star {
+    display: flex;
+    margin: 0 auto;
+    @include xl {
+      display: none;
+    }
+  }
+  .desktop_star {
+    display: none;
+    @include xl {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .desc {
+    width: 8.125rem;
+    color: $financialTextTitle;
+    text-align: center;
+    font-family: $poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 0.9rem */
+    white-space: normal;
+    @include xl {
+      width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.75rem;
+      margin-bottom: 1.87rem;
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    .price {
+      color: $primaryOrange;
+      font-family: $poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      @include xl {
+        font-size: 1.56rem;
+      }
+    }
+    .button {
+      width: 2.07744rem;
+      height: 2.07744rem;
+      background-color: $primaryOrange;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      @include xl {
+        display: none;
+      }
+      &:hover {
+        background-color: darken($primaryOrange, 10%);
+        cursor: pointer;
+        transform: translateY(-5px) scale(1.05);
+        transition: background-color 0.3s ease, transform 0.3s ease; 
+      }
+    }
+    .order {
+      display: none;
+      @include xl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primaryOrange;
+        border-radius: 10rem;
+        padding: 0.72rem 2.5rem;
+        border: none;
+
+        color: #fff;
+        font-family: $poppins;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 200%; /* 2rem */
+        &:hover {
+          background-color: darken($primaryOrange, 10%);
+          cursor: pointer;
+          transform: translateY(-5px) scale(1.05); /* Lift the button and scale slightly on hover */
+          transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for background-color and transform */
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,191 @@
+@import "../../styles/variables";
+@import "../../styles/responsive-mixins";
+
+.nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 360px;
+  margin: 1.56rem auto;
+  @include xl {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1.56rem auto;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 1.12rem;
+    cursor: pointer;
+    &:hover {
+      transform: translateY(-3px);
+    }
+    &__circle {
+      background-color: $primaryOrange;
+      border-radius: 50%;
+      width: 3.1875rem;
+      height: 3.1875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 1.5625rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      // padding: 0.37rem 0.94rem 0.44rem 1.13rem;
+      &:hover {
+        background-color: darken($primaryOrange, 10%);
+      }
+    }
+    .first {
+      color: #000;
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+    .second {
+      color: $primaryOrange;
+      font-family: $poppins;
+      font-weight: 600;
+      font-size: 0.875rem;
+    }
+  }
+  &__links {
+    display: none;
+    @include xl {
+      display: flex;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 2.81rem;
+        list-style: none;
+
+        .link {
+          width: 100%;
+          color: #311f09;
+          font-family: $poppins;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            text-decoration: underline $primaryOrange;
+          }
+        }
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    &__basket {
+      position: relative;
+      cursor: pointer;
+      display: block;
+      @include xl {
+        // cursor: default;
+      }
+      img {
+      }
+      &__count {
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        background-color: $primaryRed;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 0.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    &__menu {
+      position: relative;
+      transition: 2s ease-in-out;
+
+      img {
+        cursor: pointer;
+      }
+      @include xl {
+        display: none;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+      }
+    }
+    &__loginBtn {
+      display: none;
+      @include xl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.92rem 2.1rem;
+        background-color: #3fa72f;
+        border-radius: 8.3125rem;
+        color: #fff;
+        font-family: Poppins;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        &:hover {
+          background-color: darken($secondaryGreen, 10%);
+          cursor: pointer;
+          transform: translateX(3px);
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      }
+      button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: #fff;
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+  }
+  // .cart {
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  //   @include xl {
+  //     display: none;
+  //   }
+  //   .active {
+  //     opacity: 1;
+  //     visibility: visible;
+  //     transform: translateY(0);
+  //     transition: var(--speed) ease;
+  //   }
+
+  //   .inactive {
+  //     /* styles for when the cart is inactive/closed */
+  //     opacity: 0;
+  //     visibility: hidden;
+  //     transform: translateY(-20px);
+  //     transition: var(--speed) ease;
+  //   }
+  // }
+}

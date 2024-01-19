@@ -1,0 +1,168 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive-mixins";
+
+p {
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(208, 204, 199, 0.1);
+  .content {
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    @include xl {
+      max-width: 1200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title {
+      margin-top: 3.8rem;
+      color: $titleText;
+      font-family: $tinos;
+      font-size: 2.1875rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 200%; /* 10rem */
+      @include xl {
+        font-size: 5rem;
+        line-height: 10rem;
+        margin-bottom: 3.5rem;
+      }
+    }
+    .main_img {
+      width: 7.5rem;
+      margin-bottom: 0.94rem;
+      @include xl {
+        width: 16rem;
+        margin-bottom: 2.62rem;
+      }
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .name {
+      color: $titleText;
+      text-align: center;
+      font-family: $poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 200%; /* 3.75rem */
+      @include xl {
+        font-size: 1.875rem;
+        line-height: 3.75rem;
+      }
+    }
+    .position {
+      color: $financialTextDesc;
+      text-align: center;
+      font-family: $poppins;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 200%; /* 2.5rem */
+      @include xl {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+      }
+    }
+    .comment {
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      margin-top: 3.25rem;
+      .up {
+        align-self: self-start;
+        transform: translateY(-1rem);
+        width: 0.95381rem;
+        @include xl {
+          width: 2.33rem;
+        }
+      }
+      .text {
+        color: $financialTextDesc;
+        text-align: center;
+        font-family: $poppins;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 200%; /* 2.5rem */
+        @include xl {
+          font-size: 1.25rem;
+          line-height: 2.5rem;
+          width: 32.75713rem;
+        }
+      }
+      .down {
+        align-self: flex-end;
+        transform: translateY(1rem);
+        width: 0.95381rem;
+        @include xl {
+          width: 2.33rem;
+        }
+      }
+    }
+    .circle {
+      display: flex;
+      gap: 10px;
+      @media (min-width: 769px) {
+        gap: 30px;
+      }
+      .middle_container {
+        display: flex;
+        padding-top: 50px;
+        gap: 10px;
+        @include xl {
+          gap: 30px;
+        }
+      }
+      .imageForDesktop {
+        display: none;
+        @include xl {
+          display: block;
+          margin-bottom: 14rem;
+          width: 4rem;
+        }
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .desktop_position2 {
+        @include xl {
+          width: 6.59813rem;
+          margin-bottom: 4rem;
+        }
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .desktop_position1 {
+        @include xl {
+          width: 7.76594rem;
+        }
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      .middle {
+        @include xl {
+          width: 14.53838rem;
+        }
+        &:hover {
+          transform: scale(1.1) rotate(5deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}

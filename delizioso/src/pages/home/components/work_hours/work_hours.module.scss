@@ -1,0 +1,113 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive-mixins";
+
+p {
+  margin: 0;
+}
+
+.container {
+  padding-bottom: 10rem;
+  padding-top: 12rem;
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+    background-image: url(../../../../assets/home/working_hours.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 3rem;
+    padding-bottom: 2rem;
+    @include xl {
+      max-width: 1200px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4rem;
+      border-radius: 13rem;
+    }
+    .title {
+      color: #fff;
+      text-align: center;
+      font-family: $tinos;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 115%; /* 2.875rem */
+      margin: 2rem auto;
+      @include xl {
+        font-size: 5rem;
+        line-height: 10rem;
+      }
+    }
+    .week_days {
+      color: #fff;
+      text-align: center;
+      font-family: $poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 0.68rem;
+      @include xl {
+        font-size: 2.5rem;
+        line-height: 5rem;
+      }
+    }
+    .lunch {
+      color: #fff;
+      text-align: center;
+      font-family: $poppins;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @include xl {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+      }
+    }
+    .dinner {
+      color: #fff;
+      text-align: center;
+      font-family: $poppins;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        @include xl {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+      }
+    }
+    .blank {
+      color: #fff;
+      text-align: right;
+      font-family: $poppins;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+        @include xl {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+      }
+    }
+
+    .buttons{
+        margin-top: 0.94rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.94rem;
+        @include xl {
+          flex-direction: row;
+          justify-content: center;
+          gap: 1.25rem;
+        }
+    }
+ 
+  }
+}

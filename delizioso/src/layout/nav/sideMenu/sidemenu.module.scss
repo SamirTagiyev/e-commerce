@@ -1,0 +1,122 @@
+@import "../../../styles/responsive-mixins";
+@import "../../../styles/variables";
+
+// sidemenu.module.scss
+
+.sideMenu {
+  //  width: 90%;
+  // max-width: 360px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #FFF;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.3s ease-in-out;
+  // animation: 0.3s start-animation ease-in-out;
+  z-index: 100;
+
+  // @keyframes start-animation {
+  //   from {
+  //     // transform: translateX(-100%);
+  //     left: -100%;
+  //   }
+  //   to {
+  //     // transform: translateX(0);
+  //     left: 0;
+  //   }
+    
+  // }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .name {
+      color: #555;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  .links {
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      font-size: 18px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .btns {
+    // position: absolute;
+    // bottom: 20px;
+    // width: 100%;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+    gap: 10px;
+    .login {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      background-color: $secondaryGreen;
+      text-align: center;
+      border-radius: 0.68rem;
+    }
+
+    button , a {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #e74c3c;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 0.68rem;
+
+      &.logout {
+        background-color: $primaryOrange;
+      }
+
+      &:hover {
+        background-color: #c0392b;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../styles/responsive-mixins";
+
+.error {
+  width: 35rem;
+  @include xs {
+    width: 19rem;
+  }
+}
+
+.btn {
+  margin-top: 3rem;
+
+  font-size: 2.5rem;
+  @include xs {
+    font-size: 1rem;
+  }
+}

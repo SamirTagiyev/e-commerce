@@ -1,0 +1,207 @@
+@import "../../../styles/variables";
+@import "../../../styles/responsive-mixins";
+
+.container {
+  hr {
+    border-top: 0.5px dashed #d0ccc7;
+    @include xl {
+      border-top: 1px dashed #d0ccc7;
+    }
+  }
+  .voucher_container {
+    margin-bottom: 1rem;
+    .voucher_code {
+      width: 90%;
+      max-width: 360px;
+      margin: 0 auto;
+      margin: 1.56rem auto;
+      @include xl {
+        width: 90%;
+        max-width: 1200px;
+        margin: 1.56rem auto;
+        display: flex;
+        align-items: center;
+      }
+      label {
+        color: #000;
+        font-family: Poppins;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @include xl {
+          color: #000;
+          font-family: Poppins;
+          font-size: 1.5625rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          width: 100%;
+        }
+      }
+      .input_btn {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1.25rem;
+        input {
+          border-radius: 0.9375rem;
+          background: #fafaf9;
+          color: #0875c3;
+          font-family: Poppins;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 0.9rem 0rem;
+          width: 100%;
+          text-align: center;
+          @include xl {
+            border-radius: 0.9375rem;
+            background: #fafaf9;
+            color: #0875c3;
+            font-family: Poppins;
+            font-size: 1.5625rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 0.9rem 0rem;
+            width: 100%;
+            text-align: center;
+          }
+        }
+        button {
+          color: #fff;
+          background-color: #53a5e0;
+          border-radius: 0.94rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.9rem 0.8rem;
+        }
+      }
+    }
+    display: flex;
+    flex-direction: column;
+    .error{
+      margin: auto;
+      color: red;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @include xl {
+        color: red;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  .checkout {
+    padding-top: 2rem;
+    width: 90%;
+    max-width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @include xl {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .sub {
+      margin-bottom: 1.06rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .text {
+        color: #000;
+        font-family: Poppins;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        @include xl {
+          color: #000;
+          font-family: Poppins;
+          font-size: 1.5625rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+      .price {
+        color: #ff8a00;
+        font-family: Poppins;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 200%; /* 1.75rem */
+        @include xl {
+          color: #ff8a00;
+          font-family: Poppins;
+          font-size: 1.5625rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 200%; /* 3.125rem */
+        }
+      }
+    }
+    .total_amount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      .text {
+        color: #000;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .price {
+        color: #ff8a00;
+        font-family: Poppins;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 200%; /* 2.5rem */
+      }
+    }
+    .checkout_btn {
+      margin: 3rem auto;
+      padding: 0.56rem 3.88rem;
+      border-radius: 0.9375rem;
+      background: #3fc66e;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 200%; /* 2rem */
+        &:hover {
+          background-color: darken($secondaryGreen, 10%);
+          cursor: pointer;
+          transform: translateY(-3px);
+          transition: all 0.3s ease-in-out;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+      @include xl {
+        color: #fff;
+        font-family: Poppins;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 200%; /* 3.125rem */
+        padding: 0.8rem 7rem;
+      }
+    }
+  }
+}

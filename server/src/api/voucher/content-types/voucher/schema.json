@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vouchers",
+  "info": {
+    "singularName": "voucher",
+    "pluralName": "vouchers",
+    "displayName": "voucher"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "discount": {
+      "type": "decimal"
+    }
+  }
+}

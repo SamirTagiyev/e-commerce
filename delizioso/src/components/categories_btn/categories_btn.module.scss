@@ -1,0 +1,53 @@
+@import "../../styles/variables";
+
+@import "../../styles/responsive-mixins";
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+  margin-top: 2rem;
+  // overflow-x: auto;
+  @include xl {
+    gap: 1.72rem;
+    // overflow-x: hidden;
+  }
+  &:hover {
+    background-color: rgb(
+      208,
+      204,
+      199,
+      0.3
+    ); /* Change background color on 
+    hover */
+    border-radius: 10rem;
+    cursor: pointer;
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.category {
+  border-radius: 3.25738rem;
+  background-color: rgb(208, 204, 199, 0.1);
+  cursor: pointer;
+  @include xl {
+    border-radius: 10rem;
+  }
+}
+
+.text {
+  padding: 0.5rem 1.06rem;
+  color: #311f09;
+  font-family: $poppins;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 200%; /* 1.5rem */
+  white-space: nowrap;
+  @include xl {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 1.08rem 3.4rem;
+  }
+}

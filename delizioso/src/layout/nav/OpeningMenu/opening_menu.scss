@@ -1,0 +1,43 @@
+/* OpeningMenu.css */
+
+.opening-menu {
+  width: 250px; /* Adjust the width as needed */
+  height: 50%;
+  position: fixed;
+  top: 70px;
+ right: 0;
+  background-color: #d0d4ca; /* Background color */
+  opacity: 0.9;
+  transition: right 0.3s ease; /* Animation effect */
+  z-index: 1000; /* Adjust the z-index as needed */
+  overflow-y: auto; /* Add if content exceeds height */
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.opening-menu.open {
+  right: 60px;
+}
+
+/* Styling for menu items (adjust as needed) */
+.opening-menu a {
+  text-align: center;
+  // display: flex;
+  padding: 10px;
+  color: rgb(128, 57, 31); /* Text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.opening-menu a:hover {
+  background-color: #a58642;
+  color: aliceblue; /* Background color on hover */
+}
+.link .active{
+  color: orange;
+}

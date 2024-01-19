@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+@import "../../styles/responsive-mixins";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include xs {
+    display: flex;
+  }
+
+  .login_picture {
+    background-image: url("../../assets/login.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include xs {
+      display: none;
+    }
+  }
+}

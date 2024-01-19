@@ -1,0 +1,60 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive-mixins";
+
+.container {
+  // width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-height: 306px;
+  margin-bottom: 1rem;
+  @include xl {
+    max-height: 620px;
+  }
+
+  &:hover {
+    p {
+      color: $primaryOrange;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .image {
+  }
+  .chef_picture {
+    @include xl {
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.08);
+      margin-bottom: 2rem;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .name {
+    color: $titleText;
+    font-family: $poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 1rem;
+    @include xl {
+      font-size: 1.56rem;
+      line-height: 3.125rem;
+    }
+  }
+  .desc {
+    color: #a08d76;
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @include xl {
+      font-size: 1.56rem;
+      line-height: 3.125rem;
+    }
+  }
+}

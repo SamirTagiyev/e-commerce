@@ -1,0 +1,124 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive-mixins";
+
+.header {
+  width: 90%;
+  max-width: 360px;
+  margin: 3.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include xl {
+    width: 90%;
+    max-width: 1200px;
+    margin: 1.56rem auto;
+    flex-direction: row;
+  }
+  .restaurant {
+    &__name {
+      border-radius: 7.875rem;
+      background-color: rgba(255, 165, 0, 0.2);
+      display: inline-block;
+      color: $primaryOrange;
+      font-family: $raleway;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 0.825rem;
+      padding: 0.38rem 1.13rem;
+      @include xl {
+        padding: 0.63rem 2.15rem;
+        font-size: 1.125rem;
+        line-height: 1.2375rem;
+      }
+    }
+    &__title {
+      color: $titleText;
+      font-family: $raleway;
+      font-size: 3.75rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 3.75rem;
+      display: flex;
+      flex-direction: column;
+      @include xl {
+        font-size: 5rem;
+        line-height: 5.5rem;
+      }
+    }
+    &__description {
+      margin-top: 0.94rem;
+      color: $financialTextDesc;
+      font-family: $poppins;
+      font-size: 0.75rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.5rem;
+      width: 19.6rem;
+      margin-bottom: 2rem;
+      @include xl {
+        width: 32.7rem;
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+        margin-bottom: 4.84rem;
+      }
+    }
+    &__buttons {
+      display: flex;
+      align-items: start;
+      gap: 1.25rem;
+      &__order {
+        background-color: $primaryOrange;
+        padding: 0.64rem 2.35rem;
+        border-radius: 6.09475rem;
+        border: none;
+        color: #fff;
+        font-family: $poppins;
+        font-size: 0.74806rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 200%; /* 1.49619rem */
+        @include xl {
+          padding: 1rem 3.9rem;
+          font-size: 1.25rem;
+          line-height: 2.5rem;
+        }
+        &:hover {
+          background-color: darken($primaryOrange, 10%);
+          cursor: pointer;
+          transform: translateY(-3px);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &__reserv {
+        background-color: $secondaryGreen;
+        padding: 0.64rem 2.35rem;
+        border-radius: 6.09475rem;
+        border: none;
+        color: #fff;
+        font-family: $poppins;
+        font-size: 0.74806rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 200%; /* 1.49619rem */
+        @include xl {
+          padding: 1rem 3.49rem;
+          font-size: 1.25rem;
+          line-height: 2.5rem;
+        }
+        &:hover {
+          background-color: darken($secondaryGreen, 10%);
+          cursor: pointer;
+          transform: translateY(-3px);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  .picture {
+    margin-top: 3.86rem;
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+}

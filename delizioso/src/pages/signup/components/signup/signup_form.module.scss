@@ -1,0 +1,202 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/responsive-mixins";
+
+.container_signup {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+    @include xs{
+           align-items: center;
+           justify-content: center;
+        }
+  .title {
+    color: #311f09;
+    font-family: Raleway;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+      @include xs{
+          margin-bottom: 0.5rem;
+        }
+  }
+  .signin {
+    color: #5c4529;
+    font-family: $poppins;
+    font-size: 0.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%; /* 1.75rem */
+    margin-bottom: 1.5rem;
+    a {
+      color: #0094ff;
+    }
+  }
+  form {
+   
+    .form_control {
+      display: flex;
+      flex-direction: column;
+      gap: 0.94rem;
+      margin-bottom: 0.8rem;
+      width: 20rem;
+      label {
+        color: #311f09;
+        font-family: $poppins;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      input {
+        width: 100%;
+        color: #311f09;
+        font-family: $poppins;
+        font-size: 0.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1.91rem;
+        background-color: rgb(208, 204, 199, 0.1);
+        border-radius: 0.625rem;
+        // padding-right: 10rem;
+      }
+    }
+    .form_control_func {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      .checkbox {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        input {
+          border-radius: 0.5rem;
+          border: 1px solid #dcd4cb;
+          width: 1.1rem;
+          height: 1.1rem;
+        }
+        label {
+          color: #5c4529;
+          font-family: $poppins;
+          font-size: 0.7rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      .forgot_password {
+        color: #5c4529;
+        font-family: $poppins;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .signup {
+      border-radius: 0.625rem;
+      background: #ff8a00;
+      color: #fff;
+      font-family: $poppins;
+      font-size: 0.7rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 1rem 0rem;
+      width: 100%;
+      margin-bottom: 1.25rem;
+    }
+    .signup_google {
+      border-radius: 0.625rem;
+      border: 1px solid rgb(182, 163, 139, 0.8);
+      color: #311f09;
+      font-family: $poppins;
+      font-size: 0.7rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding: 0.9rem 0rem;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 1.1rem;
+      }
+
+    }
+  }
+  .copyright {
+    color: #c7bfb6;
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+      @include xs{
+           position: absolute;
+           bottom: 2rem;
+        }
+  }
+}
+
+
+ .nav__logo__circle {
+    background-color: $primaryOrange;
+    border-radius: 50%;
+    width: 3.1875rem;
+    height: 3.1875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    // padding: 0.37rem 0.94rem 0.44rem 1.13rem;
+    @include xs {
+     top: 30px;
+      left: 40px;
+    }
+  }
+
+  .error{
+    color: red;
+    font-family: Poppins;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0.5rem;
+  }
+
+
+  .input_wrapper {
+  display: flex;
+  position: relative;
+  .eye {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
